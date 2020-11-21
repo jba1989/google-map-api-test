@@ -17,6 +17,8 @@ class CreateDistsTable extends Migration
             $table->id();
             $table->foreignId('city_id')->constrained();
             $table->string('name', 10);
+            $table->MediumInteger('zip');
+            $table->string('filename', 20);
             $table->timestamps();
             $table->index('city_id');
         });

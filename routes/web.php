@@ -19,5 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/data/get', [DataController::class, 'getAddress']);
 Route::get('/data/show', [DataController::class, 'show']);
 Route::get('/data/import', [DataController::class, 'import']);
